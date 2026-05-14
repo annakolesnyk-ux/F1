@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #111;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    line-height: 1.5;
+}
+
+/* HEADER */
+
+header {
+
+    background: linear-gradient(to right, #b30000, black);
+
+    padding: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 0 15px red;
+}
+
+header h1 {
+
+    font-size: 48px;
+
+    letter-spacing: 2px;
+
+}
+
+/* NAVIGATION */
+
+nav {
+
+    background-color: #1a1a1a;
+
+    padding: 18px;
+
+    text-align: center;
+
+    border-bottom: 2px solid red;
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 20px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+
+    color: red;
+
+}
+
+main {
+
+    padding: 40px;
+}
+
+/* TEAM CARDS */
+
+.teams-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.team-card {
+
+    background-color: #1b1b1b;
+
+    width: 320px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 15px rgba(255,0,0,0.4);
+}
+
+.team-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 0 25px red;
+}
+
+.team-card img {
+
+    width: 140px;
+
+    height: 140px;
+
+    object-fit: contain;
+
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+}
+
+.team-card h2 {
+
+    margin-bottom: 15px;
+
+    font-size: 28px;
+}
+
+.team-card p {
+
+    font-size: 17px;
+}
+
+/* POINTS */
+
+.points {
+
+    color: red;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+    text-shadow: 0 0 10px red;
+}
+
+/* DRIVER PAGE */
+
+.drivers-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.driver-card {
+
+    background-color: #1b1b1b;
+
+    width: 260px;
+
+    padding: 20px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 10px rgba(255,0,0,0.5);
+}
+
+.driver-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 0 20px red;
+}
+
+.driver-card img {
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.driver-card h3 {
+
+    margin-bottom: 10px;
+
+    font-size: 24px;
+}
+
+.leader {
+
+    border: 2px solid gold;
+
+    width: 320px;
+}
+
+.small {
+
+    width: 200px;
+}
+
+.small img {
+
+    height: 240px;
+}
+
+/* SECTIONS */
+
+section {
+
+    margin-bottom: 70px;
+}
+
+section h2 {
+
+    text-align: center;
+
+    font-size: 48px;
+
+    margin-bottom: 30px;
+}
+
+/* CONTACT PAGE */
+
+.contact-container {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    align-items: flex-start;
+}
+
+.contact-form {
+
+    flex: 1;
+
+    background-color: #1b1b1b;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 15px rgba(255,0,0,0.4);
+}
+
+.statistics {
+
+    width: 350px;
+
+    background-color: #1b1b1b;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 15px rgba(255,0,0,0.4);
+}
+
+/* FORM */
+
+form label {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 18px;
+}
+
+form input,
+form textarea,
+form select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+
+    background-color: red;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+
+    background-color: darkred;
+
+    box-shadow: 0 0 15px red;
+}
+
+/* TABLES */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+table th,
+table td {
+
+    border: 1px solid #333;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+table th {
+
+    background-color: #b30000;
+}
+
+/* BUTTON TO TOP */
+
+.top-button {
+
+    text-align: center;
+
+    margin-top: 50px;
+}
+
+.top-button a {
+
+    background-color: red;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+    box-shadow: 0 0 10px rgba(255,0,0,0.5);
+}
+
+.top-button a:hover {
+
+    background-color: darkred;
+
+    box-shadow: 0 0 20px red;
+
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+footer {
+
+    background-color: black;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 50px;
+
+    border-top: 2px solid red;
+}
+
+footer p {
+
+    font-size: 18px;
+}
+
+audio {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    border-radius: 10px;
+}
